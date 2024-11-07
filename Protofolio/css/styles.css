@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container{
+    margin: 10px;
+    border-style: solid;
+    overflow:hidden;
+  }
+  .header{
+    color: white;
+    display: flex;
+    padding: 10px 10px 10px 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo{
+    font-family:'Times New Roman', Times, serif
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links a{
+    text-decoration: none ;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  .nav-links a:hover {
+    background-color: white;
+    text-decoration-line: underline;
+    color: black;
+  }
+  /** hero**/
+  
+  .hero{
+    display: flex;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    padding-top: 5%;
+    overflow: hidden;
+  }
+  .hero-content{
+    flex: 1;
+    padding: 10px;
+    height: auto;
+  }
+  .hero img{
+    border-radius: 40%;
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    size: 50px;
+  }
+  
+  .hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .hero-content .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .hero-content .btn:hover {
+    background-color: white;
+    text-decoration-line: underline;
+    color: black;
+  }
+  .about{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+  }
+  .about-content{
+    flex: 1;
+    padding: 20px;
+    height: auto;
+  }
+  .about-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .progress-bar {
+    background-color: #333;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .progress {
+    background-color: #eeebeb;
+    height: 100%;
+  }
+  .progress.java{
+    width: 90%;
+  }
+  .progress.web-design{
+    width: 70%;
+  }
+  .progress.photoshop{
+    width: 85%;
+  }
+  #projects{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    height: auto;
+  }
+  .project-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    justify-content: space-around;
+  }
+  .project{
+    border-style: solid;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .project h3{
+    text-decoration: underline;
+  }
+  .project .btn{
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  .project .btn:hover{
+  background-color: white;
+  text-decoration-line: underline;
+  color: black;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer{
+    text-align: center;
+  }
+  @media screen and (max-width: 700px) {
+    .header{
+      flex-direction: column;
+      display: block;
+    }
+    .header h2 {
+      text-align: center;
+    }
+   .nav-links {
+    display: block;
+   }
+   a{
+    display: block;
+    text-align: center;
+   }
+   .hero{
+    flex-wrap: wrap;
+   }
+   .about{
+    display: block;
+   }
+   .project-list{
+    display: block;
+   }
+  }
